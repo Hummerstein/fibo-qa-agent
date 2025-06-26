@@ -1,0 +1,200 @@
+import requests
+import json
+from tools.ontology_tools import (
+    # Original functions
+    get_superclasses,
+    get_subclasses,
+    get_properties,
+    describe_class,
+    get_class_candidates,
+    resolve_class_name_fuzzy,
+    explain_class,
+    # New enhanced functions
+    search_classes_by_keyword,
+    get_related_concepts,
+    explain_relationship,
+    get_property_details,
+    get_ontology_stats
+)
+
+LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
+LM_MODEL = "google/gemma-3-12b"
+
+TOOLS_DESCRIPTION = """
+You are a semantic planner for FIBO ontology queries. Given a user's question, return a JSON object with:
+- function: the tool to call
+- arguments: a list of arguments (empty if not required)
+
+Available tools:
+- get_superclasses(class_name): Get parent classes
+- get_subclasses(class_name): Get child classes  
+- get_properties(class_name): Get properties of a class
+- describe_class(class_name): Basic class description
+- explain_class(class_name): Detailed class explanation with metadata
+- search_classes_by_keyword(keyword): Search for classes containing keyword
+- get_related_concepts(class_name, max_depth): Find related concepts (default depth=2)
+- explain_relationship(class1, class2): Explain how two classes are related
+- get_property_details(property_name): Get detailed property information
+- list_classes(): List all available classes
+- get_ontology_stats(): Get ontology statistics
+
+Only return valid JSON. Do not explain your answer.
+
+Examples:
+User: What is the parent of ShareholdersEquity?
+{"function": "get_superclasses", "arguments": ["ShareholdersEquity"]}
+
+User: What are the subclasses of OwnersEquity?
+{"function": "get_subclasses", "arguments": ["OwnersEquity"]}
+
+User: What are the properties of ShareholdersEquity?
+{"function": "get_properties", "arguments": ["ShareholdersEquity"]}
+
+User: Tell me about OwnersEquity
+{"function": "describe_class", "arguments": ["OwnersEquity"]}
+
+User: Explain OwnersEquity in detail
+{"function": "explain_class", "arguments": ["OwnersEquity"]}
+
+User: Search for equity classes
+{"function": "search_classes_by_keyword", "arguments": ["equity"]}
+
+User: What concepts are related to Ownership?
+{"function": "get_related_concepts", "arguments": ["Ownership"]}
+
+User: How are EquityInstrument and Ownership related?
+{"function": "explain_relationship", "arguments": ["EquityInstrument", "Ownership"]}
+
+User: Tell me about the hasOwner property
+{"function": "get_property_details", "arguments": ["hasOwner"]}
+
+User: What classes are available?
+{"function": "list_classes", "arguments": []}
+
+User: Give me ontology statistics
+{"function": "get_ontology_stats", "arguments": []}
+"""
+
+def call_local_llm(prompt):
+    try:
+        response = requests.post(
+            LM_STUDIO_URL,
+            headers={"Content-Type": "application/json"},
+            json={
+                "model": LM_MODEL,
+                "messages": [
+                    {"role": "system", "content": TOOLS_DESCRIPTION},
+                    {"role": "user", "content": prompt}
+                ],
+                "temperature": 0.2
+            }
+        )
+        response.raise_for_status()
+        return response.json()["choices"][0]["message"]["content"]
+    except Exception as e:
+        return f"❌ LLM error: {e}"
+
+def list_classes():
+    """List all available classes with truncation"""
+    candidates = get_class_candidates()
+    return "\n".join(f"• {name}" for name in candidates[:100]) + ("\n... (truncated)" if len(candidates) > 100 else "")
+
+def run_natural_language_query(user_input):
+    """Process natural language query and execute appropriate ontology function"""
+    full_prompt = f"{user_input}"
+    raw_plan = call_local_llm(full_prompt)
+    print("📦 Raw plan:", raw_plan)
+
+    # Clean up JSON formatting
+    if "```" in raw_plan:
+        raw_plan = raw_plan.replace("```json", "").replace("```", "").strip()
+
+    try:
+        plan = json.loads(raw_plan)
+    except json.JSONDecodeError:
+        return f"❌ Failed to parse LLM output as JSON:\n{raw_plan}"
+
+    func = plan.get("function")
+    args = plan.get("arguments", [])
+
+    # Handle functions that don't need class name resolution
+    if func == "list_classes":
+        return list_classes()
+    elif func == "get_ontology_stats":
+        return get_ontology_stats()
+    elif func == "search_classes_by_keyword":
+        if args:
+            return search_classes_by_keyword(*args)
+        else:
+            return "❌ search_classes_by_keyword requires a keyword argument"
+
+    # Handle functions that need class name resolution
+    class_functions = ["get_superclasses", "get_subclasses", "get_properties", 
+                      "describe_class", "explain_class", "get_related_concepts"]
+    
+    if func in class_functions and args:
+        original_name = args[0]
+        resolved = resolve_class_name_fuzzy(original_name)
+        if not resolved:
+            return f"❌ Class '{original_name}' not found. Try another or check spelling."
+        args[0] = resolved
+
+    # Handle functions that need two class names
+    if func == "explain_relationship" and len(args) >= 2:
+        for i in range(2):  # Resolve both class names
+            original_name = args[i]
+            resolved = resolve_class_name_fuzzy(original_name)
+            if not resolved:
+                return f"❌ Class '{original_name}' not found. Try another or check spelling."
+            args[i] = resolved
+
+    # Execute the appropriate function
+    if func == "get_superclasses":
+        return get_superclasses(*args)
+    elif func == "get_subclasses":
+        return get_subclasses(*args)
+    elif func == "get_properties":
+        return get_properties(*args)
+    elif func == "describe_class":
+        return describe_class(*args)
+    elif func == "explain_class":
+        return explain_class(*args)
+    elif func == "get_related_concepts":
+        if len(args) == 1:
+            return get_related_concepts(args[0])  # Use default max_depth=2
+        elif len(args) == 2:
+            return get_related_concepts(args[0], args[1])
+        else:
+            return get_related_concepts(*args)
+    elif func == "explain_relationship":
+        if len(args) >= 2:
+            return explain_relationship(args[0], args[1])
+        else:
+            return "❌ explain_relationship requires two class names"
+    elif func == "get_property_details":
+        return get_property_details(*args)
+    else:
+        return f"❌ Unsupported function: {func}"
+
+def interactive_mode():
+    """Run interactive question-answering mode"""
+    print("✅ Enhanced FIBO Planner is running with LM Studio and Gemma.\n")
+    print("🆕 New capabilities:")
+    print("  • Search for concepts by keyword")
+    print("  • Find related concepts") 
+    print("  • Explain relationships between classes")
+    print("  • Get detailed property information")
+    print("  • View ontology statistics\n")
+
+    while True:
+        user_input = input("💬 Ask a FIBO question (or 'q' to quit): ").strip()
+        if user_input.lower() in {"q", "quit", "exit"}:
+            print("👋 Exiting.")
+            break
+
+        result = run_natural_language_query(user_input)
+        print("🧠", result)
+        print()  # Add spacing between queries
+
+if __name__ == "__main__":
+    interactive_mode()

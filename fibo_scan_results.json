@@ -1,0 +1,1950 @@
+{
+  "scan_timestamp": "/Users/thudblunder/Documents/fibo_qa_agent",
+  "total_files": 299,
+  "total_size_mb": 12.113097190856934,
+  "by_domain": {
+    "ROOT": 5,
+    "IND": 20,
+    "LOAN": 20,
+    "BP": 12,
+    "ACTUS": 2,
+    "BE": 52,
+    "DER": 25,
+    "SEC": 38,
+    "FBC": 42,
+    "etc": 4,
+    "CAE": 7,
+    "MD": 11,
+    "FND": 61
+  },
+  "all_files": [
+    {
+      "path": "AboutFIBODev.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/AboutFIBODev.rdf",
+      "size": 29944,
+      "size_kb": 29.2
+    },
+    {
+      "path": "AboutFIBOProd-IncludingReferenceData.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/AboutFIBOProd-IncludingReferenceData.rdf",
+      "size": 32406,
+      "size_kb": 31.6
+    },
+    {
+      "path": "AboutFIBOProd-TBoxOnly.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/AboutFIBOProd-TBoxOnly.rdf",
+      "size": 16862,
+      "size_kb": 16.5
+    },
+    {
+      "path": "MetadataFIBO.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MetadataFIBO.rdf",
+      "size": 9759,
+      "size_kb": 9.5
+    },
+    {
+      "path": "AboutFIBOProd.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/AboutFIBOProd.rdf",
+      "size": 23335,
+      "size_kb": 22.8
+    },
+    {
+      "path": "IND/MetadataIND.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/MetadataIND.rdf",
+      "size": 7289,
+      "size_kb": 7.1
+    },
+    {
+      "path": "IND/AllIND-ExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/AllIND-ExampleIndividuals.rdf",
+      "size": 5310,
+      "size_kb": 5.2
+    },
+    {
+      "path": "IND/AllIND-ReferenceRates.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/AllIND-ReferenceRates.rdf",
+      "size": 5473,
+      "size_kb": 5.3
+    },
+    {
+      "path": "IND/AllIND-NorthAmerica.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/AllIND-NorthAmerica.rdf",
+      "size": 5715,
+      "size_kb": 5.6
+    },
+    {
+      "path": "IND/AllIND.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/AllIND.rdf",
+      "size": 6560,
+      "size_kb": 6.4
+    },
+    {
+      "path": "IND/MarketIndices/MetadataINDMarketIndices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/MarketIndices/MetadataINDMarketIndices.rdf",
+      "size": 5357,
+      "size_kb": 5.2
+    },
+    {
+      "path": "IND/MarketIndices/BasketIndices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/MarketIndices/BasketIndices.rdf",
+      "size": 24425,
+      "size_kb": 23.9
+    },
+    {
+      "path": "IND/MarketIndices/EquityIndexExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/MarketIndices/EquityIndexExampleIndividuals.rdf",
+      "size": 27260,
+      "size_kb": 26.6
+    },
+    {
+      "path": "IND/ForeignExchange/ForeignExchange.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/ForeignExchange/ForeignExchange.rdf",
+      "size": 19136,
+      "size_kb": 18.7
+    },
+    {
+      "path": "IND/ForeignExchange/MetadataINDForeignExchange.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/ForeignExchange/MetadataINDForeignExchange.rdf",
+      "size": 4900,
+      "size_kb": 4.8
+    },
+    {
+      "path": "IND/Indicators/Indicators.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/Indicators/Indicators.rdf",
+      "size": 22624,
+      "size_kb": 22.1
+    },
+    {
+      "path": "IND/Indicators/MetadataINDIndicators.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/Indicators/MetadataINDIndicators.rdf",
+      "size": 4908,
+      "size_kb": 4.8
+    },
+    {
+      "path": "IND/InterestRates/CommonInterestRates.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/InterestRates/CommonInterestRates.rdf",
+      "size": 364875,
+      "size_kb": 356.3
+    },
+    {
+      "path": "IND/InterestRates/InterestRates.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/InterestRates/InterestRates.rdf",
+      "size": 30930,
+      "size_kb": 30.2
+    },
+    {
+      "path": "IND/InterestRates/MetadataINDInterestRates.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/InterestRates/MetadataINDInterestRates.rdf",
+      "size": 5464,
+      "size_kb": 5.3
+    },
+    {
+      "path": "IND/InterestRates/MarketDataProviders.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/InterestRates/MarketDataProviders.rdf",
+      "size": 26365,
+      "size_kb": 25.7
+    },
+    {
+      "path": "IND/EconomicIndicators/EconomicIndicators.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/EconomicIndicators/EconomicIndicators.rdf",
+      "size": 86184,
+      "size_kb": 84.2
+    },
+    {
+      "path": "IND/EconomicIndicators/MetadataINDEconomicIndicators.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/EconomicIndicators/MetadataINDEconomicIndicators.rdf",
+      "size": 5899,
+      "size_kb": 5.8
+    },
+    {
+      "path": "IND/EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators.rdf",
+      "size": 23493,
+      "size_kb": 22.9
+    },
+    {
+      "path": "IND/EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/IND/EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators.rdf",
+      "size": 18338,
+      "size_kb": 17.9
+    },
+    {
+      "path": "LOAN/MetadataLOAN.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/MetadataLOAN.rdf",
+      "size": 5784,
+      "size_kb": 5.6
+    },
+    {
+      "path": "LOAN/AllLOAN.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/AllLOAN.rdf",
+      "size": 8518,
+      "size_kb": 8.3
+    },
+    {
+      "path": "LOAN/RealEstateLoans/MortgageOrigination.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/RealEstateLoans/MortgageOrigination.rdf",
+      "size": 37099,
+      "size_kb": 36.2
+    },
+    {
+      "path": "LOAN/RealEstateLoans/MetadataLOANRealEstateLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/RealEstateLoans/MetadataLOANRealEstateLoans.rdf",
+      "size": 4614,
+      "size_kb": 4.5
+    },
+    {
+      "path": "LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages.rdf",
+      "size": 18447,
+      "size_kb": 18.0
+    },
+    {
+      "path": "LOAN/RealEstateLoans/Mortgages.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/RealEstateLoans/Mortgages.rdf",
+      "size": 15274,
+      "size_kb": 14.9
+    },
+    {
+      "path": "LOAN/RealEstateLoans/ConstructionLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/RealEstateLoans/ConstructionLoans.rdf",
+      "size": 8813,
+      "size_kb": 8.6
+    },
+    {
+      "path": "LOAN/LoansGeneral/Loans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansGeneral/Loans.rdf",
+      "size": 45385,
+      "size_kb": 44.3
+    },
+    {
+      "path": "LOAN/LoansGeneral/MetadataLOANLoansGeneral.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansGeneral/MetadataLOANLoansGeneral.rdf",
+      "size": 4341,
+      "size_kb": 4.2
+    },
+    {
+      "path": "LOAN/LoansGeneral/LoansRegulatory.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansGeneral/LoansRegulatory.rdf",
+      "size": 23865,
+      "size_kb": 23.3
+    },
+    {
+      "path": "LOAN/LoansGeneral/LoanApplications.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansGeneral/LoanApplications.rdf",
+      "size": 34711,
+      "size_kb": 33.9
+    },
+    {
+      "path": "LOAN/LoansGeneral/LoanEvents.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansGeneral/LoanEvents.rdf",
+      "size": 15623,
+      "size_kb": 15.3
+    },
+    {
+      "path": "LOAN/LoansSpecific/MetadataLOANLoansSpecific.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/MetadataLOANLoansSpecific.rdf",
+      "size": 4876,
+      "size_kb": 4.8
+    },
+    {
+      "path": "LOAN/LoansSpecific/StudentLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/StudentLoans.rdf",
+      "size": 7543,
+      "size_kb": 7.4
+    },
+    {
+      "path": "LOAN/LoansSpecific/ConsumerLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/ConsumerLoans.rdf",
+      "size": 12727,
+      "size_kb": 12.4
+    },
+    {
+      "path": "LOAN/LoansSpecific/GreenLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/GreenLoans.rdf",
+      "size": 48724,
+      "size_kb": 47.6
+    },
+    {
+      "path": "LOAN/LoansSpecific/MarineFinance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/MarineFinance.rdf",
+      "size": 4833,
+      "size_kb": 4.7
+    },
+    {
+      "path": "LOAN/LoansSpecific/LoanProducts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/LoanProducts.rdf",
+      "size": 18833,
+      "size_kb": 18.4
+    },
+    {
+      "path": "LOAN/LoansSpecific/CardAccounts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/CardAccounts.rdf",
+      "size": 44645,
+      "size_kb": 43.6
+    },
+    {
+      "path": "LOAN/LoansSpecific/CommercialLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/LOAN/LoansSpecific/CommercialLoans.rdf",
+      "size": 7693,
+      "size_kb": 7.5
+    },
+    {
+      "path": "BP/MetadataBP.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/MetadataBP.rdf",
+      "size": 4673,
+      "size_kb": 4.6
+    },
+    {
+      "path": "BP/SecuritiesIssuance/MetadataBPSecuritiesIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/MetadataBPSecuritiesIssuance.rdf",
+      "size": 4336,
+      "size_kb": 4.2
+    },
+    {
+      "path": "BP/SecuritiesIssuance/DebtIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/DebtIssuance.rdf",
+      "size": 26111,
+      "size_kb": 25.5
+    },
+    {
+      "path": "BP/SecuritiesIssuance/EquitiesIPOIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance.rdf",
+      "size": 18659,
+      "size_kb": 18.2
+    },
+    {
+      "path": "BP/SecuritiesIssuance/MuniIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/MuniIssuance.rdf",
+      "size": 46568,
+      "size_kb": 45.5
+    },
+    {
+      "path": "BP/SecuritiesIssuance/MBSIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/MBSIssuance.rdf",
+      "size": 4338,
+      "size_kb": 4.2
+    },
+    {
+      "path": "BP/SecuritiesIssuance/PrivateLabelMBSIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance.rdf",
+      "size": 48465,
+      "size_kb": 47.3
+    },
+    {
+      "path": "BP/SecuritiesIssuance/IssuanceProcess.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/IssuanceProcess.rdf",
+      "size": 32365,
+      "size_kb": 31.6
+    },
+    {
+      "path": "BP/SecuritiesIssuance/IssuanceDocuments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/IssuanceDocuments.rdf",
+      "size": 8543,
+      "size_kb": 8.3
+    },
+    {
+      "path": "BP/SecuritiesIssuance/AgencyMBSIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/SecuritiesIssuance/AgencyMBSIssuance.rdf",
+      "size": 27762,
+      "size_kb": 27.1
+    },
+    {
+      "path": "BP/Process/FinancialContextAndProcess.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/Process/FinancialContextAndProcess.rdf",
+      "size": 11102,
+      "size_kb": 10.8
+    },
+    {
+      "path": "BP/Process/MetadataBPProcess.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BP/Process/MetadataBPProcess.rdf",
+      "size": 3250,
+      "size_kb": 3.2
+    },
+    {
+      "path": "ACTUS/MetadataACTUS.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/ACTUS/MetadataACTUS.rdf",
+      "size": 6716,
+      "size_kb": 6.6
+    },
+    {
+      "path": "ACTUS/ACTUSControlledVocabulary.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/ACTUS/ACTUSControlledVocabulary.rdf",
+      "size": 63969,
+      "size_kb": 62.5
+    },
+    {
+      "path": "BE/MetadataBE.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/MetadataBE.rdf",
+      "size": 10244,
+      "size_kb": 10.0
+    },
+    {
+      "path": "BE/AllBE-NorthAmerica.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/AllBE-NorthAmerica.rdf",
+      "size": 18885,
+      "size_kb": 18.4
+    },
+    {
+      "path": "BE/AllBE-NorthAmericanExamples.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/AllBE-NorthAmericanExamples.rdf",
+      "size": 6149,
+      "size_kb": 6.0
+    },
+    {
+      "path": "BE/AllBE-ExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/AllBE-ExampleIndividuals.rdf",
+      "size": 5261,
+      "size_kb": 5.1
+    },
+    {
+      "path": "BE/AllBE-ReferenceIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/AllBE-ReferenceIndividuals.rdf",
+      "size": 6134,
+      "size_kb": 6.0
+    },
+    {
+      "path": "BE/AllBE.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/AllBE.rdf",
+      "size": 10235,
+      "size_kb": 10.0
+    },
+    {
+      "path": "BE/AllBE-Europe.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/AllBE-Europe.rdf",
+      "size": 22552,
+      "size_kb": 22.0
+    },
+    {
+      "path": "BE/SoleProprietorships/SoleProprietorships.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/SoleProprietorships/SoleProprietorships.rdf",
+      "size": 9885,
+      "size_kb": 9.7
+    },
+    {
+      "path": "BE/SoleProprietorships/MetadataBESoleProprietorships.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/SoleProprietorships/MetadataBESoleProprietorships.rdf",
+      "size": 3735,
+      "size_kb": 3.6
+    },
+    {
+      "path": "BE/Trusts/MetadataBETrusts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/Trusts/MetadataBETrusts.rdf",
+      "size": 3535,
+      "size_kb": 3.5
+    },
+    {
+      "path": "BE/Trusts/Trusts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/Trusts/Trusts.rdf",
+      "size": 20968,
+      "size_kb": 20.5
+    },
+    {
+      "path": "BE/OwnershipAndControl/Executives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/OwnershipAndControl/Executives.rdf",
+      "size": 48389,
+      "size_kb": 47.3
+    },
+    {
+      "path": "BE/OwnershipAndControl/CorporateOwnership.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/OwnershipAndControl/CorporateOwnership.rdf",
+      "size": 16062,
+      "size_kb": 15.7
+    },
+    {
+      "path": "BE/OwnershipAndControl/CorporateControl.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/OwnershipAndControl/CorporateControl.rdf",
+      "size": 22358,
+      "size_kb": 21.8
+    },
+    {
+      "path": "BE/OwnershipAndControl/MetadataBEOwnershipAndControl.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/OwnershipAndControl/MetadataBEOwnershipAndControl.rdf",
+      "size": 5424,
+      "size_kb": 5.3
+    },
+    {
+      "path": "BE/OwnershipAndControl/OwnershipParties.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/OwnershipAndControl/OwnershipParties.rdf",
+      "size": 24518,
+      "size_kb": 23.9
+    },
+    {
+      "path": "BE/OwnershipAndControl/ControlParties.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/OwnershipAndControl/ControlParties.rdf",
+      "size": 23210,
+      "size_kb": 22.7
+    },
+    {
+      "path": "BE/FunctionalEntities/Publishers.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/FunctionalEntities/Publishers.rdf",
+      "size": 9047,
+      "size_kb": 8.8
+    },
+    {
+      "path": "BE/FunctionalEntities/FunctionalEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/FunctionalEntities/FunctionalEntities.rdf",
+      "size": 22705,
+      "size_kb": 22.2
+    },
+    {
+      "path": "BE/FunctionalEntities/MetadataBEFunctionalEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/FunctionalEntities/MetadataBEFunctionalEntities.rdf",
+      "size": 3806,
+      "size_kb": 3.7
+    },
+    {
+      "path": "BE/Corporations/Corporations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/Corporations/Corporations.rdf",
+      "size": 20725,
+      "size_kb": 20.2
+    },
+    {
+      "path": "BE/Corporations/MetadataBECorporations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/Corporations/MetadataBECorporations.rdf",
+      "size": 3471,
+      "size_kb": 3.4
+    },
+    {
+      "path": "BE/GovernmentEntities/MetadataBEGovernmentEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/MetadataBEGovernmentEntities.rdf",
+      "size": 6303,
+      "size_kb": 6.2
+    },
+    {
+      "path": "BE/GovernmentEntities/GovernmentEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/GovernmentEntities.rdf",
+      "size": 39981,
+      "size_kb": 39.0
+    },
+    {
+      "path": "BE/GovernmentEntities/LatinAmericanJurisdiction/CentralAmericanGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/LatinAmericanJurisdiction/CentralAmericanGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 18321,
+      "size_kb": 17.9
+    },
+    {
+      "path": "BE/GovernmentEntities/LatinAmericanJurisdiction/SouthAmericanGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/LatinAmericanJurisdiction/SouthAmericanGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 28291,
+      "size_kb": 27.6
+    },
+    {
+      "path": "BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 143081,
+      "size_kb": 139.7
+    },
+    {
+      "path": "BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 33721,
+      "size_kb": 32.9
+    },
+    {
+      "path": "BE/GovernmentEntities/NorthAmericanJurisdiction/CAGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CAGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 40716,
+      "size_kb": 39.8
+    },
+    {
+      "path": "BE/GovernmentEntities/NorthAmericanJurisdiction/MXGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/MXGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 11771,
+      "size_kb": 11.5
+    },
+    {
+      "path": "BE/GovernmentEntities/EuropeanJurisdiction/NorthernEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/EuropeanJurisdiction/NorthernEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 27591,
+      "size_kb": 26.9
+    },
+    {
+      "path": "BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 21976,
+      "size_kb": 21.5
+    },
+    {
+      "path": "BE/GovernmentEntities/EuropeanJurisdiction/WesternEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/EuropeanJurisdiction/WesternEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 23314,
+      "size_kb": 22.8
+    },
+    {
+      "path": "BE/GovernmentEntities/EuropeanJurisdiction/SouthernEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/EuropeanJurisdiction/SouthernEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 37261,
+      "size_kb": 36.4
+    },
+    {
+      "path": "BE/GovernmentEntities/EuropeanJurisdiction/EUGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/EuropeanJurisdiction/EUGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 13914,
+      "size_kb": 13.6
+    },
+    {
+      "path": "BE/GovernmentEntities/EuropeanJurisdiction/EasternEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/EuropeanJurisdiction/EasternEuropeGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 26896,
+      "size_kb": 26.3
+    },
+    {
+      "path": "BE/GovernmentEntities/AsianJurisdiction/EasternAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/AsianJurisdiction/EasternAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 20416,
+      "size_kb": 19.9
+    },
+    {
+      "path": "BE/GovernmentEntities/AsianJurisdiction/SoutheasternAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/AsianJurisdiction/SoutheasternAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 26712,
+      "size_kb": 26.1
+    },
+    {
+      "path": "BE/GovernmentEntities/AsianJurisdiction/SouthernAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/AsianJurisdiction/SouthernAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 21894,
+      "size_kb": 21.4
+    },
+    {
+      "path": "BE/GovernmentEntities/AsianJurisdiction/WesternAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/AsianJurisdiction/WesternAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 37461,
+      "size_kb": 36.6
+    },
+    {
+      "path": "BE/GovernmentEntities/AsianJurisdiction/CentralAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/GovernmentEntities/AsianJurisdiction/CentralAsiaGovernmentEntitiesAndJurisdictions.rdf",
+      "size": 14476,
+      "size_kb": 14.1
+    },
+    {
+      "path": "BE/Partnerships/Partnerships.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/Partnerships/Partnerships.rdf",
+      "size": 23047,
+      "size_kb": 22.5
+    },
+    {
+      "path": "BE/Partnerships/MetadataBEPartnerships.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/Partnerships/MetadataBEPartnerships.rdf",
+      "size": 3996,
+      "size_kb": 3.9
+    },
+    {
+      "path": "BE/LegalEntities/LEIEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/LEIEntities.rdf",
+      "size": 39015,
+      "size_kb": 38.1
+    },
+    {
+      "path": "BE/LegalEntities/FormalBusinessOrganizations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/FormalBusinessOrganizations.rdf",
+      "size": 21853,
+      "size_kb": 21.3
+    },
+    {
+      "path": "BE/LegalEntities/LegalPersons.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/LegalPersons.rdf",
+      "size": 24418,
+      "size_kb": 23.8
+    },
+    {
+      "path": "BE/LegalEntities/MetadataBELegalEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/MetadataBELegalEntities.rdf",
+      "size": 5037,
+      "size_kb": 4.9
+    },
+    {
+      "path": "BE/LegalEntities/CorporateBodies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/CorporateBodies.rdf",
+      "size": 17283,
+      "size_kb": 16.9
+    },
+    {
+      "path": "BE/LegalEntities/NorthAmericanEntities/USExampleExecutives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/NorthAmericanEntities/USExampleExecutives.rdf",
+      "size": 13221,
+      "size_kb": 12.9
+    },
+    {
+      "path": "BE/LegalEntities/NorthAmericanEntities/USExampleEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities.rdf",
+      "size": 22343,
+      "size_kb": 21.8
+    },
+    {
+      "path": "BE/PrivateLimitedCompanies/MetadataBEPrivateLimitedCompanies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/PrivateLimitedCompanies/MetadataBEPrivateLimitedCompanies.rdf",
+      "size": 3761,
+      "size_kb": 3.7
+    },
+    {
+      "path": "BE/PrivateLimitedCompanies/PrivateLimitedCompanies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/BE/PrivateLimitedCompanies/PrivateLimitedCompanies.rdf",
+      "size": 16223,
+      "size_kb": 15.8
+    },
+    {
+      "path": "DER/AllDER.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/AllDER.rdf",
+      "size": 9324,
+      "size_kb": 9.1
+    },
+    {
+      "path": "DER/AllDER-ReferenceIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/AllDER-ReferenceIndividuals.rdf",
+      "size": 4827,
+      "size_kb": 4.7
+    },
+    {
+      "path": "DER/MetadataDER.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/MetadataDER.rdf",
+      "size": 6645,
+      "size_kb": 6.5
+    },
+    {
+      "path": "DER/AllDER-ExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/AllDER-ExampleIndividuals.rdf",
+      "size": 5115,
+      "size_kb": 5.0
+    },
+    {
+      "path": "DER/CreditDerivatives/MetadataDERCreditDerivatives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/CreditDerivatives/MetadataDERCreditDerivatives.rdf",
+      "size": 3699,
+      "size_kb": 3.6
+    },
+    {
+      "path": "DER/CreditDerivatives/CreditDefaultSwaps.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/CreditDerivatives/CreditDefaultSwaps.rdf",
+      "size": 39530,
+      "size_kb": 38.6
+    },
+    {
+      "path": "DER/SecurityBasedDerivatives/SecurityBasedDerivatives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/SecurityBasedDerivatives/SecurityBasedDerivatives.rdf",
+      "size": 22758,
+      "size_kb": 22.2
+    },
+    {
+      "path": "DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives.rdf",
+      "size": 5000,
+      "size_kb": 4.9
+    },
+    {
+      "path": "DER/SecurityBasedDerivatives/EquitySwaps.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/SecurityBasedDerivatives/EquitySwaps.rdf",
+      "size": 21138,
+      "size_kb": 20.6
+    },
+    {
+      "path": "DER/DerivativesContracts/ExoticOptions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/ExoticOptions.rdf",
+      "size": 67374,
+      "size_kb": 65.8
+    },
+    {
+      "path": "DER/DerivativesContracts/DerivativesMasterAgreements.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/DerivativesMasterAgreements.rdf",
+      "size": 24557,
+      "size_kb": 24.0
+    },
+    {
+      "path": "DER/DerivativesContracts/CurrencyContracts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/CurrencyContracts.rdf",
+      "size": 24504,
+      "size_kb": 23.9
+    },
+    {
+      "path": "DER/DerivativesContracts/DerivativesBasics.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/DerivativesBasics.rdf",
+      "size": 52074,
+      "size_kb": 50.9
+    },
+    {
+      "path": "DER/DerivativesContracts/Options.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/Options.rdf",
+      "size": 66673,
+      "size_kb": 65.1
+    },
+    {
+      "path": "DER/DerivativesContracts/Swaps.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/Swaps.rdf",
+      "size": 54931,
+      "size_kb": 53.6
+    },
+    {
+      "path": "DER/DerivativesContracts/FuturesAndForwards.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/FuturesAndForwards.rdf",
+      "size": 37442,
+      "size_kb": 36.6
+    },
+    {
+      "path": "DER/DerivativesContracts/CommoditiesContracts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/CommoditiesContracts.rdf",
+      "size": 38950,
+      "size_kb": 38.0
+    },
+    {
+      "path": "DER/DerivativesContracts/SwapsIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/SwapsIndividuals.rdf",
+      "size": 31072,
+      "size_kb": 30.3
+    },
+    {
+      "path": "DER/DerivativesContracts/StructuredInstruments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/StructuredInstruments.rdf",
+      "size": 43353,
+      "size_kb": 42.3
+    },
+    {
+      "path": "DER/DerivativesContracts/RightsAndWarrants.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/RightsAndWarrants.rdf",
+      "size": 48064,
+      "size_kb": 46.9
+    },
+    {
+      "path": "DER/DerivativesContracts/MetadataDERDerivativesContracts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/DerivativesContracts/MetadataDERDerivativesContracts.rdf",
+      "size": 5938,
+      "size_kb": 5.8
+    },
+    {
+      "path": "DER/RateDerivatives/MetadataDERRateDerivatives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/RateDerivatives/MetadataDERRateDerivatives.rdf",
+      "size": 4884,
+      "size_kb": 4.8
+    },
+    {
+      "path": "DER/RateDerivatives/RateDerivatives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/RateDerivatives/RateDerivatives.rdf",
+      "size": 8337,
+      "size_kb": 8.1
+    },
+    {
+      "path": "DER/RateDerivatives/IRSwapExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf",
+      "size": 25316,
+      "size_kb": 24.7
+    },
+    {
+      "path": "DER/RateDerivatives/IRSwaps.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/DER/RateDerivatives/IRSwaps.rdf",
+      "size": 44493,
+      "size_kb": 43.5
+    },
+    {
+      "path": "SEC/MetadataSEC.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/MetadataSEC.rdf",
+      "size": 6675,
+      "size_kb": 6.5
+    },
+    {
+      "path": "SEC/AllSEC-Europe.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/AllSEC-Europe.rdf",
+      "size": 5222,
+      "size_kb": 5.1
+    },
+    {
+      "path": "SEC/AllSEC-ExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/AllSEC-ExampleIndividuals.rdf",
+      "size": 5567,
+      "size_kb": 5.4
+    },
+    {
+      "path": "SEC/AllSEC-NorthAmerica.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/AllSEC-NorthAmerica.rdf",
+      "size": 5285,
+      "size_kb": 5.2
+    },
+    {
+      "path": "SEC/AllSEC-ReferenceIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/AllSEC-ReferenceIndividuals.rdf",
+      "size": 5558,
+      "size_kb": 5.4
+    },
+    {
+      "path": "SEC/AllSEC.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/AllSEC.rdf",
+      "size": 10343,
+      "size_kb": 10.1
+    },
+    {
+      "path": "SEC/Securities/SecuritiesClassification.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecuritiesClassification.rdf",
+      "size": 17691,
+      "size_kb": 17.3
+    },
+    {
+      "path": "SEC/Securities/Pools.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/Pools.rdf",
+      "size": 18023,
+      "size_kb": 17.6
+    },
+    {
+      "path": "SEC/Securities/SecuritiesListings.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecuritiesListings.rdf",
+      "size": 23140,
+      "size_kb": 22.6
+    },
+    {
+      "path": "SEC/Securities/Baskets.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/Baskets.rdf",
+      "size": 10367,
+      "size_kb": 10.1
+    },
+    {
+      "path": "SEC/Securities/SecuritiesIssuance.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecuritiesIssuance.rdf",
+      "size": 48006,
+      "size_kb": 46.9
+    },
+    {
+      "path": "SEC/Securities/SecurityAssets.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecurityAssets.rdf",
+      "size": 12184,
+      "size_kb": 11.9
+    },
+    {
+      "path": "SEC/Securities/MetadataSECSecurities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/MetadataSECSecurities.rdf",
+      "size": 6124,
+      "size_kb": 6.0
+    },
+    {
+      "path": "SEC/Securities/SecuritiesIdentificationIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecuritiesIdentificationIndividuals.rdf",
+      "size": 46242,
+      "size_kb": 45.2
+    },
+    {
+      "path": "SEC/Securities/ParametricSchedules.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/ParametricSchedules.rdf",
+      "size": 20821,
+      "size_kb": 20.3
+    },
+    {
+      "path": "SEC/Securities/SecuritiesIdentification.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecuritiesIdentification.rdf",
+      "size": 28030,
+      "size_kb": 27.4
+    },
+    {
+      "path": "SEC/Securities/SecuritiesRestrictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/SecuritiesRestrictions.rdf",
+      "size": 18769,
+      "size_kb": 18.3
+    },
+    {
+      "path": "SEC/Securities/NorthAmericanSecurities/USSecuritiesRestrictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/NorthAmericanSecurities/USSecuritiesRestrictions.rdf",
+      "size": 23249,
+      "size_kb": 22.7
+    },
+    {
+      "path": "SEC/Securities/EuropeanSecurities/EUSecuritiesRestrictions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Securities/EuropeanSecurities/EUSecuritiesRestrictions.rdf",
+      "size": 17750,
+      "size_kb": 17.3
+    },
+    {
+      "path": "SEC/Debt/CollateralizedDebtObligations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/CollateralizedDebtObligations.rdf",
+      "size": 81636,
+      "size_kb": 79.7
+    },
+    {
+      "path": "SEC/Debt/SyntheticCDOs.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/SyntheticCDOs.rdf",
+      "size": 20562,
+      "size_kb": 20.1
+    },
+    {
+      "path": "SEC/Debt/DistributedLoans.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/DistributedLoans.rdf",
+      "size": 15757,
+      "size_kb": 15.4
+    },
+    {
+      "path": "SEC/Debt/MortgageBackedSecurities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/MortgageBackedSecurities.rdf",
+      "size": 33598,
+      "size_kb": 32.8
+    },
+    {
+      "path": "SEC/Debt/MetadataSECDebt.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/MetadataSECDebt.rdf",
+      "size": 5816,
+      "size_kb": 5.7
+    },
+    {
+      "path": "SEC/Debt/Bonds.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/Bonds.rdf",
+      "size": 106331,
+      "size_kb": 103.8
+    },
+    {
+      "path": "SEC/Debt/PoolBackedSecurities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/PoolBackedSecurities.rdf",
+      "size": 41128,
+      "size_kb": 40.2
+    },
+    {
+      "path": "SEC/Debt/ExerciseConventions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/ExerciseConventions.rdf",
+      "size": 14968,
+      "size_kb": 14.6
+    },
+    {
+      "path": "SEC/Debt/AssetBackedSecurities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/AssetBackedSecurities.rdf",
+      "size": 23667,
+      "size_kb": 23.1
+    },
+    {
+      "path": "SEC/Debt/TradedShortTermDebt.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/TradedShortTermDebt.rdf",
+      "size": 19662,
+      "size_kb": 19.2
+    },
+    {
+      "path": "SEC/Debt/DebtInstruments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Debt/DebtInstruments.rdf",
+      "size": 51175,
+      "size_kb": 50.0
+    },
+    {
+      "path": "SEC/Funds/MetadataSECFunds.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Funds/MetadataSECFunds.rdf",
+      "size": 4742,
+      "size_kb": 4.6
+    },
+    {
+      "path": "SEC/Funds/Funds.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Funds/Funds.rdf",
+      "size": 26609,
+      "size_kb": 26.0
+    },
+    {
+      "path": "SEC/Funds/CollectiveInvestmentVehicles.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Funds/CollectiveInvestmentVehicles.rdf",
+      "size": 144351,
+      "size_kb": 141.0
+    },
+    {
+      "path": "SEC/Equities/EquitiesExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Equities/EquitiesExampleIndividuals.rdf",
+      "size": 75037,
+      "size_kb": 73.3
+    },
+    {
+      "path": "SEC/Equities/DepositaryReceipts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Equities/DepositaryReceipts.rdf",
+      "size": 33605,
+      "size_kb": 32.8
+    },
+    {
+      "path": "SEC/Equities/MetadataSECEquities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Equities/MetadataSECEquities.rdf",
+      "size": 5208,
+      "size_kb": 5.1
+    },
+    {
+      "path": "SEC/Equities/EquityInstruments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Equities/EquityInstruments.rdf",
+      "size": 85655,
+      "size_kb": 83.6
+    },
+    {
+      "path": "SEC/Equities/EquityCFIClassificationIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/SEC/Equities/EquityCFIClassificationIndividuals.rdf",
+      "size": 275567,
+      "size_kb": 269.1
+    },
+    {
+      "path": "FBC/AllFBC-Europe.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-Europe.rdf",
+      "size": 5791,
+      "size_kb": 5.7
+    },
+    {
+      "path": "FBC/AllFBC-EuropeAndNorthAmerica.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-EuropeAndNorthAmerica.rdf",
+      "size": 4631,
+      "size_kb": 4.5
+    },
+    {
+      "path": "FBC/AllFBC-ReferenceIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-ReferenceIndividuals.rdf",
+      "size": 4909,
+      "size_kb": 4.8
+    },
+    {
+      "path": "FBC/AllFBC-NorthAmerica.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-NorthAmerica.rdf",
+      "size": 7767,
+      "size_kb": 7.6
+    },
+    {
+      "path": "FBC/AllFBC.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC.rdf",
+      "size": 8924,
+      "size_kb": 8.7
+    },
+    {
+      "path": "FBC/MetadataFBC.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/MetadataFBC.rdf",
+      "size": 6696,
+      "size_kb": 6.5
+    },
+    {
+      "path": "FBC/AllFBC-ExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-ExampleIndividuals.rdf",
+      "size": 5149,
+      "size_kb": 5.0
+    },
+    {
+      "path": "FBC/AllFBC-NorthAmericanExamples.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-NorthAmericanExamples.rdf",
+      "size": 5017,
+      "size_kb": 4.9
+    },
+    {
+      "path": "FBC/AllFBC-ReferenceMarkets.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/AllFBC-ReferenceMarkets.rdf",
+      "size": 5548,
+      "size_kb": 5.4
+    },
+    {
+      "path": "FBC/FunctionalEntities/MetadataFBCFunctionalEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/MetadataFBCFunctionalEntities.rdf",
+      "size": 6761,
+      "size_kb": 6.6
+    },
+    {
+      "path": "FBC/FunctionalEntities/RegistrationAuthorities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/RegistrationAuthorities.rdf",
+      "size": 11764,
+      "size_kb": 11.5
+    },
+    {
+      "path": "FBC/FunctionalEntities/InternationalRegistriesAndAuthorities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/InternationalRegistriesAndAuthorities.rdf",
+      "size": 33260,
+      "size_kb": 32.5
+    },
+    {
+      "path": "FBC/FunctionalEntities/BusinessRegistries.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/BusinessRegistries.rdf",
+      "size": 60586,
+      "size_kb": 59.2
+    },
+    {
+      "path": "FBC/FunctionalEntities/RegulatoryAgencies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/RegulatoryAgencies.rdf",
+      "size": 19202,
+      "size_kb": 18.8
+    },
+    {
+      "path": "FBC/FunctionalEntities/BusinessCentersIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/BusinessCentersIndividuals.rdf",
+      "size": 226719,
+      "size_kb": 221.4
+    },
+    {
+      "path": "FBC/FunctionalEntities/MarketsIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/MarketsIndividuals.rdf",
+      "size": 4557489,
+      "size_kb": 4450.7
+    },
+    {
+      "path": "FBC/FunctionalEntities/BusinessCenters.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/BusinessCenters.rdf",
+      "size": 9521,
+      "size_kb": 9.3
+    },
+    {
+      "path": "FBC/FunctionalEntities/Markets.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/Markets.rdf",
+      "size": 72121,
+      "size_kb": 70.4
+    },
+    {
+      "path": "FBC/FunctionalEntities/FinancialServicesEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/FinancialServicesEntities.rdf",
+      "size": 81668,
+      "size_kb": 79.8
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/CAFinancialServicesEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/CAFinancialServicesEntities.rdf",
+      "size": 5107,
+      "size_kb": 5.0
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals.rdf",
+      "size": 71131,
+      "size_kb": 69.5
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals.rdf",
+      "size": 51341,
+      "size_kb": 50.1
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies.rdf",
+      "size": 173473,
+      "size_kb": 169.4
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals.rdf",
+      "size": 159694,
+      "size_kb": 156.0
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities.rdf",
+      "size": 80911,
+      "size_kb": 79.0
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies.rdf",
+      "size": 52284,
+      "size_kb": 51.1
+    },
+    {
+      "path": "FBC/FunctionalEntities/NorthAmericanEntities/USNationalInformationCenterControlledVocabularies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/NorthAmericanEntities/USNationalInformationCenterControlledVocabularies.rdf",
+      "size": 38422,
+      "size_kb": 37.5
+    },
+    {
+      "path": "FBC/FunctionalEntities/EuropeanEntities/EURegulatoryAgencies.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/EuropeanEntities/EURegulatoryAgencies.rdf",
+      "size": 20906,
+      "size_kb": 20.4
+    },
+    {
+      "path": "FBC/FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities.rdf",
+      "size": 12234,
+      "size_kb": 11.9
+    },
+    {
+      "path": "FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf",
+      "size": 57334,
+      "size_kb": 56.0
+    },
+    {
+      "path": "FBC/FinancialInstruments/MetadataFBCFinancialInstruments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FinancialInstruments/MetadataFBCFinancialInstruments.rdf",
+      "size": 4048,
+      "size_kb": 4.0
+    },
+    {
+      "path": "FBC/FinancialInstruments/FinancialInstruments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FinancialInstruments/FinancialInstruments.rdf",
+      "size": 55914,
+      "size_kb": 54.6
+    },
+    {
+      "path": "FBC/FinancialInstruments/Settlement.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FinancialInstruments/Settlement.rdf",
+      "size": 19901,
+      "size_kb": 19.4
+    },
+    {
+      "path": "FBC/FinancialInstruments/InstrumentPricing.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/FinancialInstruments/InstrumentPricing.rdf",
+      "size": 45469,
+      "size_kb": 44.4
+    },
+    {
+      "path": "FBC/ProductsAndServices/MetadataFBCProductsAndServices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/ProductsAndServices/MetadataFBCProductsAndServices.rdf",
+      "size": 3961,
+      "size_kb": 3.9
+    },
+    {
+      "path": "FBC/ProductsAndServices/FinancialProductsAndServices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/ProductsAndServices/FinancialProductsAndServices.rdf",
+      "size": 84200,
+      "size_kb": 82.2
+    },
+    {
+      "path": "FBC/ProductsAndServices/ClientsAndAccounts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/ProductsAndServices/ClientsAndAccounts.rdf",
+      "size": 73934,
+      "size_kb": 72.2
+    },
+    {
+      "path": "FBC/DebtAndEquities/MetadataFBCDebtAndEquities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/DebtAndEquities/MetadataFBCDebtAndEquities.rdf",
+      "size": 3946,
+      "size_kb": 3.9
+    },
+    {
+      "path": "FBC/DebtAndEquities/Guaranty.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/DebtAndEquities/Guaranty.rdf",
+      "size": 25382,
+      "size_kb": 24.8
+    },
+    {
+      "path": "FBC/DebtAndEquities/CreditEvents.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/DebtAndEquities/CreditEvents.rdf",
+      "size": 27376,
+      "size_kb": 26.7
+    },
+    {
+      "path": "FBC/DebtAndEquities/CreditRatings.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/DebtAndEquities/CreditRatings.rdf",
+      "size": 30671,
+      "size_kb": 30.0
+    },
+    {
+      "path": "FBC/DebtAndEquities/Debt.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FBC/DebtAndEquities/Debt.rdf",
+      "size": 103327,
+      "size_kb": 100.9
+    },
+    {
+      "path": "etc/testing/data/fnd/Organizations/TestFormalOrganizations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/etc/testing/data/fnd/Organizations/TestFormalOrganizations.rdf",
+      "size": 14236,
+      "size_kb": 13.9
+    },
+    {
+      "path": "etc/testing/data/fnd/OwnershipAndControl/TestOwnership.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/etc/testing/data/fnd/OwnershipAndControl/TestOwnership.rdf",
+      "size": 7225,
+      "size_kb": 7.1
+    },
+    {
+      "path": "etc/testing/data/fnd/OwnershipAndControl/TestControl.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/etc/testing/data/fnd/OwnershipAndControl/TestControl.rdf",
+      "size": 7531,
+      "size_kb": 7.4
+    },
+    {
+      "path": "etc/vocabulary/scaffolding.ttl",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/etc/vocabulary/scaffolding.ttl",
+      "size": 1320,
+      "size_kb": 1.3
+    },
+    {
+      "path": "CAE/MetadataCAE.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/MetadataCAE.rdf",
+      "size": 5399,
+      "size_kb": 5.3
+    },
+    {
+      "path": "CAE/AllCAE.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/AllCAE.rdf",
+      "size": 4661,
+      "size_kb": 4.6
+    },
+    {
+      "path": "CAE/CorporateEvents/ISO15022-CorporateActionIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/CorporateEvents/ISO15022-CorporateActionIndividuals.rdf",
+      "size": 39384,
+      "size_kb": 38.5
+    },
+    {
+      "path": "CAE/CorporateEvents/SecurityRelatedCorporateActions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions.rdf",
+      "size": 42019,
+      "size_kb": 41.0
+    },
+    {
+      "path": "CAE/CorporateEvents/CorporateActions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/CorporateEvents/CorporateActions.rdf",
+      "size": 24999,
+      "size_kb": 24.4
+    },
+    {
+      "path": "CAE/CorporateEvents/MetadataCAECorporateEvents.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/CorporateEvents/MetadataCAECorporateEvents.rdf",
+      "size": 3881,
+      "size_kb": 3.8
+    },
+    {
+      "path": "CAE/CorporateEvents/GLEIF-CorporateActionIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/CAE/CorporateEvents/GLEIF-CorporateActionIndividuals.rdf",
+      "size": 20549,
+      "size_kb": 20.1
+    },
+    {
+      "path": "MD/MetadataMD.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/MetadataMD.rdf",
+      "size": 5046,
+      "size_kb": 4.9
+    },
+    {
+      "path": "MD/TemporalCore/MetadataMDTemporalCore.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/TemporalCore/MetadataMDTemporalCore.rdf",
+      "size": 3376,
+      "size_kb": 3.3
+    },
+    {
+      "path": "MD/TemporalCore/SecurityCreditStatuses.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/TemporalCore/SecurityCreditStatuses.rdf",
+      "size": 7447,
+      "size_kb": 7.3
+    },
+    {
+      "path": "MD/TemporalCore/SecurityTradingStatuses.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/TemporalCore/SecurityTradingStatuses.rdf",
+      "size": 9190,
+      "size_kb": 9.0
+    },
+    {
+      "path": "MD/DerivativesTemporal/FuturesTemporal.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/DerivativesTemporal/FuturesTemporal.rdf",
+      "size": 8025,
+      "size_kb": 7.8
+    },
+    {
+      "path": "MD/DerivativesTemporal/MetadataMDDerivativesTemporal.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/DerivativesTemporal/MetadataMDDerivativesTemporal.rdf",
+      "size": 3522,
+      "size_kb": 3.4
+    },
+    {
+      "path": "MD/DerivativesTemporal/ETOptionsTemporal.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/DerivativesTemporal/ETOptionsTemporal.rdf",
+      "size": 10162,
+      "size_kb": 9.9
+    },
+    {
+      "path": "MD/DebtTemporal/DebtAnalytics.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/DebtTemporal/DebtAnalytics.rdf",
+      "size": 65632,
+      "size_kb": 64.1
+    },
+    {
+      "path": "MD/DebtTemporal/MetadataMDDebtTemporal.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/DebtTemporal/MetadataMDDebtTemporal.rdf",
+      "size": 3222,
+      "size_kb": 3.1
+    },
+    {
+      "path": "MD/CIVTemporal/MetadataMDCIVTemporal.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/CIVTemporal/MetadataMDCIVTemporal.rdf",
+      "size": 3276,
+      "size_kb": 3.2
+    },
+    {
+      "path": "MD/CIVTemporal/FundsTemporal.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/MD/CIVTemporal/FundsTemporal.rdf",
+      "size": 10054,
+      "size_kb": 9.8
+    },
+    {
+      "path": "FND/AllFND-NorthAmerica.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/AllFND-NorthAmerica.rdf",
+      "size": 4772,
+      "size_kb": 4.7
+    },
+    {
+      "path": "FND/AllFND.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/AllFND.rdf",
+      "size": 16473,
+      "size_kb": 16.1
+    },
+    {
+      "path": "FND/MetadataFND.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/MetadataFND.rdf",
+      "size": 10224,
+      "size_kb": 10.0
+    },
+    {
+      "path": "FND/Accounting/MetadataFNDAccounting.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Accounting/MetadataFNDAccounting.rdf",
+      "size": 3640,
+      "size_kb": 3.6
+    },
+    {
+      "path": "FND/Accounting/ISO4217-CurrencyCodes.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Accounting/ISO4217-CurrencyCodes.rdf",
+      "size": 215229,
+      "size_kb": 210.2
+    },
+    {
+      "path": "FND/Accounting/CurrencyAmount.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Accounting/CurrencyAmount.rdf",
+      "size": 35851,
+      "size_kb": 35.0
+    },
+    {
+      "path": "FND/Accounting/AccountingEquity.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Accounting/AccountingEquity.rdf",
+      "size": 16750,
+      "size_kb": 16.4
+    },
+    {
+      "path": "FND/Organizations/MetadataFNDOrganizations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Organizations/MetadataFNDOrganizations.rdf",
+      "size": 3815,
+      "size_kb": 3.7
+    },
+    {
+      "path": "FND/Organizations/Organizations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Organizations/Organizations.rdf",
+      "size": 13243,
+      "size_kb": 12.9
+    },
+    {
+      "path": "FND/Organizations/FormalOrganizations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Organizations/FormalOrganizations.rdf",
+      "size": 18483,
+      "size_kb": 18.0
+    },
+    {
+      "path": "FND/DatesAndTimes/BusinessDates.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/DatesAndTimes/BusinessDates.rdf",
+      "size": 19834,
+      "size_kb": 19.4
+    },
+    {
+      "path": "FND/DatesAndTimes/FinancialDates.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/DatesAndTimes/FinancialDates.rdf",
+      "size": 43683,
+      "size_kb": 42.7
+    },
+    {
+      "path": "FND/DatesAndTimes/MetadataFNDDatesAndTimes.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/DatesAndTimes/MetadataFNDDatesAndTimes.rdf",
+      "size": 3927,
+      "size_kb": 3.8
+    },
+    {
+      "path": "FND/DatesAndTimes/Occurrences.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/DatesAndTimes/Occurrences.rdf",
+      "size": 21054,
+      "size_kb": 20.6
+    },
+    {
+      "path": "FND/OwnershipAndControl/Ownership.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/OwnershipAndControl/Ownership.rdf",
+      "size": 16572,
+      "size_kb": 16.2
+    },
+    {
+      "path": "FND/OwnershipAndControl/OwnershipAndControl.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/OwnershipAndControl/OwnershipAndControl.rdf",
+      "size": 6995,
+      "size_kb": 6.8
+    },
+    {
+      "path": "FND/OwnershipAndControl/MetadataFNDOwnershipAndControl.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/OwnershipAndControl/MetadataFNDOwnershipAndControl.rdf",
+      "size": 3905,
+      "size_kb": 3.8
+    },
+    {
+      "path": "FND/OwnershipAndControl/Control.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/OwnershipAndControl/Control.rdf",
+      "size": 15925,
+      "size_kb": 15.6
+    },
+    {
+      "path": "FND/Relations/Relations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Relations/Relations.rdf",
+      "size": 25699,
+      "size_kb": 25.1
+    },
+    {
+      "path": "FND/Relations/MetadataFNDRelations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Relations/MetadataFNDRelations.rdf",
+      "size": 3533,
+      "size_kb": 3.5
+    },
+    {
+      "path": "FND/Arrangements/Documents.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/Documents.rdf",
+      "size": 8696,
+      "size_kb": 8.5
+    },
+    {
+      "path": "FND/Arrangements/MetadataFNDArrangements.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/MetadataFNDArrangements.rdf",
+      "size": 4247,
+      "size_kb": 4.1
+    },
+    {
+      "path": "FND/Arrangements/Reporting.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/Reporting.rdf",
+      "size": 17482,
+      "size_kb": 17.1
+    },
+    {
+      "path": "FND/Arrangements/Assessments.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/Assessments.rdf",
+      "size": 25147,
+      "size_kb": 24.6
+    },
+    {
+      "path": "FND/Arrangements/Arrangements.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/Arrangements.rdf",
+      "size": 7830,
+      "size_kb": 7.6
+    },
+    {
+      "path": "FND/Arrangements/IdentifiersAndIndices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/IdentifiersAndIndices.rdf",
+      "size": 12662,
+      "size_kb": 12.4
+    },
+    {
+      "path": "FND/Arrangements/Ratings.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/Ratings.rdf",
+      "size": 24338,
+      "size_kb": 23.8
+    },
+    {
+      "path": "FND/Arrangements/Lifecycles.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/Lifecycles.rdf",
+      "size": 14476,
+      "size_kb": 14.1
+    },
+    {
+      "path": "FND/Arrangements/ClassificationSchemes.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Arrangements/ClassificationSchemes.rdf",
+      "size": 7659,
+      "size_kb": 7.5
+    },
+    {
+      "path": "FND/Places/MetadataFNDPlaces.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/MetadataFNDPlaces.rdf",
+      "size": 3949,
+      "size_kb": 3.9
+    },
+    {
+      "path": "FND/Places/Addresses.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/Addresses.rdf",
+      "size": 56585,
+      "size_kb": 55.3
+    },
+    {
+      "path": "FND/Places/Facilities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/Facilities.rdf",
+      "size": 12308,
+      "size_kb": 12.0
+    },
+    {
+      "path": "FND/Places/VirtualPlaces.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/VirtualPlaces.rdf",
+      "size": 10883,
+      "size_kb": 10.6
+    },
+    {
+      "path": "FND/Places/Locations.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/Locations.rdf",
+      "size": 10581,
+      "size_kb": 10.3
+    },
+    {
+      "path": "FND/Places/RealProperty.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/RealProperty.rdf",
+      "size": 17705,
+      "size_kb": 17.3
+    },
+    {
+      "path": "FND/Places/NorthAmerica/USPostalServiceAddresses.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/NorthAmerica/USPostalServiceAddresses.rdf",
+      "size": 35698,
+      "size_kb": 34.9
+    },
+    {
+      "path": "FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals.rdf",
+      "size": 165966,
+      "size_kb": 162.1
+    },
+    {
+      "path": "FND/Law/Jurisdiction.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Law/Jurisdiction.rdf",
+      "size": 8318,
+      "size_kb": 8.1
+    },
+    {
+      "path": "FND/Law/MetadataFNDLaw.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Law/MetadataFNDLaw.rdf",
+      "size": 3553,
+      "size_kb": 3.5
+    },
+    {
+      "path": "FND/Law/LegalCore.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Law/LegalCore.rdf",
+      "size": 11520,
+      "size_kb": 11.2
+    },
+    {
+      "path": "FND/Law/LegalCapacity.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Law/LegalCapacity.rdf",
+      "size": 38712,
+      "size_kb": 37.8
+    },
+    {
+      "path": "FND/Agreements/MetadataFNDAgreements.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Agreements/MetadataFNDAgreements.rdf",
+      "size": 3905,
+      "size_kb": 3.8
+    },
+    {
+      "path": "FND/Agreements/Contracts.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Agreements/Contracts.rdf",
+      "size": 72365,
+      "size_kb": 70.7
+    },
+    {
+      "path": "FND/Agreements/Agreements.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Agreements/Agreements.rdf",
+      "size": 16040,
+      "size_kb": 15.7
+    },
+    {
+      "path": "FND/TransactionsExt/MetadataFNDTransactionsExt.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/TransactionsExt/MetadataFNDTransactionsExt.rdf",
+      "size": 4137,
+      "size_kb": 4.0
+    },
+    {
+      "path": "FND/TransactionsExt/REATransactions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/TransactionsExt/REATransactions.rdf",
+      "size": 34265,
+      "size_kb": 33.5
+    },
+    {
+      "path": "FND/TransactionsExt/SecuritiesTransactions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/TransactionsExt/SecuritiesTransactions.rdf",
+      "size": 11427,
+      "size_kb": 11.2
+    },
+    {
+      "path": "FND/TransactionsExt/MarketTransactions.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/TransactionsExt/MarketTransactions.rdf",
+      "size": 8308,
+      "size_kb": 8.1
+    },
+    {
+      "path": "FND/ProductsAndServices/MetadataFNDProductsAndServices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/ProductsAndServices/MetadataFNDProductsAndServices.rdf",
+      "size": 3724,
+      "size_kb": 3.6
+    },
+    {
+      "path": "FND/ProductsAndServices/PaymentsAndSchedules.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/ProductsAndServices/PaymentsAndSchedules.rdf",
+      "size": 15651,
+      "size_kb": 15.3
+    },
+    {
+      "path": "FND/ProductsAndServices/ProductsAndServices.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/ProductsAndServices/ProductsAndServices.rdf",
+      "size": 35449,
+      "size_kb": 34.6
+    },
+    {
+      "path": "FND/AgentsAndPeople/People.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/AgentsAndPeople/People.rdf",
+      "size": 52623,
+      "size_kb": 51.4
+    },
+    {
+      "path": "FND/AgentsAndPeople/MetadataFNDAgentsAndPeople.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/AgentsAndPeople/MetadataFNDAgentsAndPeople.rdf",
+      "size": 3675,
+      "size_kb": 3.6
+    },
+    {
+      "path": "FND/AgentsAndPeople/Agents.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/AgentsAndPeople/Agents.rdf",
+      "size": 9798,
+      "size_kb": 9.6
+    },
+    {
+      "path": "FND/Utilities/MetadataFNDUtilities.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Utilities/MetadataFNDUtilities.rdf",
+      "size": 3461,
+      "size_kb": 3.4
+    },
+    {
+      "path": "FND/Utilities/Analytics.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Utilities/Analytics.rdf",
+      "size": 52098,
+      "size_kb": 50.9
+    },
+    {
+      "path": "FND/Utilities/AnnotationVocabulary.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Utilities/AnnotationVocabulary.rdf",
+      "size": 10870,
+      "size_kb": 10.6
+    },
+    {
+      "path": "FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives.rdf",
+      "size": 3641,
+      "size_kb": 3.6
+    },
+    {
+      "path": "FND/GoalsAndObjectives/Objectives.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/GoalsAndObjectives/Objectives.rdf",
+      "size": 21896,
+      "size_kb": 21.4
+    },
+    {
+      "path": "FND/Parties/MetadataFNDParties.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Parties/MetadataFNDParties.rdf",
+      "size": 3333,
+      "size_kb": 3.3
+    },
+    {
+      "path": "FND/Parties/Parties.rdf",
+      "full_path": "/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology/FND/Parties/Parties.rdf",
+      "size": 18545,
+      "size_kb": 18.1
+    }
+  ],
+  "suggested_modules": {
+    "minimal": {
+      "name": "Minimal Working Set",
+      "files": [
+        "FND/Accounting/MetadataFNDAccounting.rdf"
+      ]
+    },
+    "root": {
+      "name": "ROOT Domain",
+      "files": [
+        "AboutFIBODev.rdf",
+        "AboutFIBOProd-IncludingReferenceData.rdf",
+        "AboutFIBOProd-TBoxOnly.rdf",
+        "MetadataFIBO.rdf",
+        "AboutFIBOProd.rdf"
+      ]
+    },
+    "ind": {
+      "name": "IND Domain",
+      "files": [
+        "IND/MetadataIND.rdf",
+        "IND/AllIND-ExampleIndividuals.rdf",
+        "IND/AllIND-ReferenceRates.rdf",
+        "IND/AllIND-NorthAmerica.rdf",
+        "IND/AllIND.rdf"
+      ]
+    },
+    "loan": {
+      "name": "LOAN Domain",
+      "files": [
+        "LOAN/MetadataLOAN.rdf",
+        "LOAN/AllLOAN.rdf",
+        "LOAN/RealEstateLoans/MortgageOrigination.rdf",
+        "LOAN/RealEstateLoans/MetadataLOANRealEstateLoans.rdf",
+        "LOAN/RealEstateLoans/HomeMortgageDisclosureActCoveredMortgages.rdf"
+      ]
+    },
+    "bp": {
+      "name": "BP Domain",
+      "files": [
+        "BP/MetadataBP.rdf",
+        "BP/SecuritiesIssuance/MetadataBPSecuritiesIssuance.rdf",
+        "BP/SecuritiesIssuance/DebtIssuance.rdf",
+        "BP/SecuritiesIssuance/EquitiesIPOIssuance.rdf",
+        "BP/SecuritiesIssuance/MuniIssuance.rdf"
+      ]
+    },
+    "actus": {
+      "name": "ACTUS Domain",
+      "files": [
+        "ACTUS/MetadataACTUS.rdf",
+        "ACTUS/ACTUSControlledVocabulary.rdf"
+      ]
+    },
+    "be": {
+      "name": "BE Domain",
+      "files": [
+        "BE/MetadataBE.rdf",
+        "BE/AllBE-NorthAmerica.rdf",
+        "BE/AllBE-NorthAmericanExamples.rdf",
+        "BE/AllBE-ExampleIndividuals.rdf",
+        "BE/AllBE-ReferenceIndividuals.rdf"
+      ]
+    },
+    "der": {
+      "name": "DER Domain",
+      "files": [
+        "DER/AllDER.rdf",
+        "DER/AllDER-ReferenceIndividuals.rdf",
+        "DER/MetadataDER.rdf",
+        "DER/AllDER-ExampleIndividuals.rdf",
+        "DER/CreditDerivatives/MetadataDERCreditDerivatives.rdf"
+      ]
+    },
+    "sec": {
+      "name": "SEC Domain",
+      "files": [
+        "SEC/MetadataSEC.rdf",
+        "SEC/AllSEC-Europe.rdf",
+        "SEC/AllSEC-ExampleIndividuals.rdf",
+        "SEC/AllSEC-NorthAmerica.rdf",
+        "SEC/AllSEC-ReferenceIndividuals.rdf"
+      ]
+    },
+    "fbc": {
+      "name": "FBC Domain",
+      "files": [
+        "FBC/AllFBC-Europe.rdf",
+        "FBC/AllFBC-EuropeAndNorthAmerica.rdf",
+        "FBC/AllFBC-ReferenceIndividuals.rdf",
+        "FBC/AllFBC-NorthAmerica.rdf",
+        "FBC/AllFBC.rdf"
+      ]
+    },
+    "etc": {
+      "name": "etc Domain",
+      "files": [
+        "etc/testing/data/fnd/Organizations/TestFormalOrganizations.rdf",
+        "etc/testing/data/fnd/OwnershipAndControl/TestOwnership.rdf",
+        "etc/testing/data/fnd/OwnershipAndControl/TestControl.rdf",
+        "etc/vocabulary/scaffolding.ttl"
+      ]
+    },
+    "cae": {
+      "name": "CAE Domain",
+      "files": [
+        "CAE/MetadataCAE.rdf",
+        "CAE/AllCAE.rdf",
+        "CAE/CorporateEvents/ISO15022-CorporateActionIndividuals.rdf",
+        "CAE/CorporateEvents/SecurityRelatedCorporateActions.rdf",
+        "CAE/CorporateEvents/CorporateActions.rdf"
+      ]
+    },
+    "md": {
+      "name": "MD Domain",
+      "files": [
+        "MD/MetadataMD.rdf",
+        "MD/TemporalCore/MetadataMDTemporalCore.rdf",
+        "MD/TemporalCore/SecurityCreditStatuses.rdf",
+        "MD/TemporalCore/SecurityTradingStatuses.rdf",
+        "MD/DerivativesTemporal/FuturesTemporal.rdf"
+      ]
+    },
+    "fnd": {
+      "name": "FND Domain",
+      "files": [
+        "FND/AllFND-NorthAmerica.rdf",
+        "FND/AllFND.rdf",
+        "FND/MetadataFND.rdf",
+        "FND/Accounting/MetadataFNDAccounting.rdf",
+        "FND/Accounting/ISO4217-CurrencyCodes.rdf"
+      ]
+    }
+  }
+}

@@ -1,0 +1,333 @@
+from owlready2 import get_ontology, Thing
+from pathlib import Path
+from collections import defaultdict, deque
+
+# ✅ Base path to your fibo-ontology directory
+ONTOLOGY_BASE_PATH = Path("/Users/thudblunder/Documents/fibo_qa_agent/fibo-ontology")
+
+# ✅ List of FIBO modules to load
+MODULE_FILES = [
+    "FND/Accounting/AccountingEquity.rdf",
+    "FND/OwnershipAndControl/Ownership.rdf",
+    "SEC/Equities/EquityInstruments.rdf"
+]
+
+# ✅ Load modules directly
+print("📦 Building ontology from modules...")
+
+first_path = ONTOLOGY_BASE_PATH / MODULE_FILES[0]
+if not first_path.exists():
+    raise FileNotFoundError(f"❌ Missing: {first_path}")
+print(f"🔗 Loading file://{first_path}")
+onto = get_ontology(f"file://{first_path}").load()
+
+for module in MODULE_FILES[1:]:
+    full_path = ONTOLOGY_BASE_PATH / module
+    if not full_path.exists():
+        raise FileNotFoundError(f"❌ Missing: {full_path}")
+    print(f"🔗 Loading file://{full_path}")
+    get_ontology(f"file://{full_path}").load()
+
+print("✅ All modules loaded")
+
+# ========== ORIGINAL FUNCTIONS ==========
+
+def get_superclasses(class_name):
+    """Get direct superclasses of a given class"""
+    cls = onto.search_one(iri="*" + class_name)
+    if not cls:
+        return f"❌ Class '{class_name}' not found in the ontology."
+    supers = list(cls.is_a)
+    return [c.name for c in supers if isinstance(c, Thing.__class__) and hasattr(c, 'name')]
+
+def get_subclasses(class_name):
+    """Get direct subclasses of a given class"""
+    cls = onto.search_one(iri="*" + class_name)
+    if not cls:
+        return f"❌ Class '{class_name}' not found in the ontology."
+    subs = list(cls.subclasses())
+    return [c.name for c in subs if hasattr(c, 'name')]
+
+def get_properties(class_name):
+    """Get object and data properties for a given class"""
+    cls = onto.search_one(iri="*" + class_name)
+    if not cls:
+        return f"❌ Class '{class_name}' not found in the ontology."
+
+    object_props = []
+    data_props = []
+
+    for prop in onto.properties():
+        domains = set(prop.domain)
+        if any(cls in c.ancestors() for c in domains):
+            if hasattr(prop, 'range') and any(r.name.startswith("xsd:") or r.name == "string" for r in prop.range):
+                data_props.append(prop.name)
+            else:
+                object_props.append(prop.name)
+
+    if not object_props and not data_props:
+        return f"ℹ️ No properties found for '{class_name}'."
+
+    result = []
+    if object_props:
+        result.append(f"🔗 Object properties: {', '.join(sorted(object_props))}")
+    if data_props:
+        result.append(f"🔤 Data properties: {', '.join(sorted(data_props))}")
+    return "\n".join(result)
+
+def get_class_candidates():
+    """Get all class names in the ontology"""
+    return sorted(cls.name for cls in onto.classes() if hasattr(cls, "name"))
+
+def resolve_class_name_fuzzy(input_name):
+    """Resolve class name with case-insensitive matching"""
+    input_lower = input_name.lower()
+    candidates = get_class_candidates()
+    matches = [c for c in candidates if c.lower() == input_lower]
+    return matches[0] if matches else None
+
+def describe_class(class_name):
+    """Basic class description with hierarchy"""
+    cls = onto.search_one(iri="*" + class_name)
+    if not cls:
+        return f"❌ Class '{class_name}' not found."
+
+    parts = [f"📛 {cls.name}"]
+    supers = [c.name for c in cls.is_a if hasattr(c, 'name')]
+    if supers:
+        parts.append("🔼 Superclasses: " + ", ".join(supers))
+    subs = [c.name for c in cls.subclasses() if hasattr(c, 'name')]
+    if subs:
+        parts.append("🔽 Subclasses: " + ", ".join(subs))
+    return "\n".join(parts)
+
+def explain_class(class_name):
+    """Detailed class explanation with metadata"""
+    cls = onto.search_one(iri="*" + class_name)
+    if not cls:
+        return f"❌ Class '{class_name}' not found."
+
+    parts = [f"📛 {cls.name}"]
+
+    labels = cls.label if hasattr(cls, "label") else []
+    if labels:
+        parts.append("📝 Label: " + ", ".join(labels))
+
+    comments = cls.comment if hasattr(cls, "comment") else []
+    if comments:
+        parts.append("🗒️ Comment: " + ", ".join(comments))
+
+    supers = [c.name for c in cls.is_a if hasattr(c, 'name')]
+    if supers:
+        parts.append("🔼 Superclasses: " + ", ".join(supers))
+
+    subs = [c.name for c in cls.subclasses() if hasattr(c, 'name')]
+    if subs:
+        parts.append("🔽 Subclasses: " + ", ".join(subs))
+
+    return "\n".join(parts)
+
+# ========== NEW ENHANCED FUNCTIONS ==========
+
+def search_classes_by_keyword(keyword):
+    """Find classes containing keyword in name, label, or comment"""
+    keyword_lower = keyword.lower()
+    matches = []
+    
+    for cls in onto.classes():
+        if not hasattr(cls, 'name'):
+            continue
+            
+        # Check name
+        if keyword_lower in cls.name.lower():
+            matches.append({
+                'name': cls.name,
+                'match_type': 'name',
+                'match_text': cls.name
+            })
+            continue
+        
+        # Check labels
+        labels = cls.label if hasattr(cls, 'label') else []
+        for label in labels:
+            if keyword_lower in label.lower():
+                matches.append({
+                    'name': cls.name,
+                    'match_type': 'label',
+                    'match_text': label
+                })
+                break
+        
+        # Check comments
+        comments = cls.comment if hasattr(cls, 'comment') else []
+        for comment in comments:
+            if keyword_lower in comment.lower():
+                matches.append({
+                    'name': cls.name,
+                    'match_type': 'comment',
+                    'match_text': comment[:100] + "..." if len(comment) > 100 else comment
+                })
+                break
+    
+    if not matches:
+        return f"❌ No classes found containing '{keyword}'"
+    
+    result = [f"🔍 Found {len(matches)} classes containing '{keyword}':"]
+    for match in matches[:10]:  # Limit to first 10 results
+        result.append(f"  📛 {match['name']} ({match['match_type']}: {match['match_text']})")
+    
+    if len(matches) > 10:
+        result.append(f"  ... and {len(matches) - 10} more matches")
+    
+    return "\n".join(result)
+
+def get_related_concepts(class_name, max_depth=2):
+    """Find conceptually related classes through properties and hierarchy"""
+    cls = onto.search_one(iri="*" + class_name)
+    if not cls:
+        return f"❌ Class '{class_name}' not found."
+    
+    related = set()
+    visited = set()
+    queue = deque([(cls, 0)])
+    
+    while queue:
+        current_cls, depth = queue.popleft()
+        
+        if current_cls in visited or depth > max_depth:
+            continue
+            
+        visited.add(current_cls)
+        
+        if depth > 0 and hasattr(current_cls, 'name'):
+            related.add(current_cls.name)
+        
+        # Add superclasses and subclasses
+        if depth < max_depth:
+            for super_cls in current_cls.is_a:
+                if isinstance(super_cls, Thing.__class__):
+                    queue.append((super_cls, depth + 1))
+            
+            for sub_cls in current_cls.subclasses():
+                queue.append((sub_cls, depth + 1))
+        
+        # Add classes connected through properties
+        if depth < max_depth:
+            for prop in onto.properties():
+                # Check domain connections
+                if current_cls in prop.domain:
+                    for range_cls in prop.range:
+                        if isinstance(range_cls, Thing.__class__):
+                            queue.append((range_cls, depth + 1))
+                
+                # Check range connections
+                if current_cls in prop.range:
+                    for domain_cls in prop.domain:
+                        if isinstance(domain_cls, Thing.__class__):
+                            queue.append((domain_cls, depth + 1))
+    
+    if not related:
+        return f"ℹ️ No related concepts found for '{class_name}' within depth {max_depth}"
+    
+    result = [f"🔗 Related concepts for '{class_name}' (within {max_depth} steps):"]
+    for concept in sorted(related)[:15]:  # Limit to 15 results
+        result.append(f"  📛 {concept}")
+    
+    if len(related) > 15:
+        result.append(f"  ... and {len(related) - 15} more related concepts")
+    
+    return "\n".join(result)
+
+def explain_relationship(class1, class2):
+    """Explain how two classes are related"""
+    cls1 = onto.search_one(iri="*" + class1)
+    cls2 = onto.search_one(iri="*" + class2)
+    
+    if not cls1:
+        return f"❌ Class '{class1}' not found."
+    if not cls2:
+        return f"❌ Class '{class2}' not found."
+    
+    relationships = []
+    
+    # Check direct inheritance
+    if cls1 in cls2.ancestors():
+        relationships.append(f"🔼 '{class1}' is a superclass of '{class2}'")
+    elif cls2 in cls1.ancestors():
+        relationships.append(f"🔽 '{class1}' is a subclass of '{class2}'")
+    
+    # Check property connections
+    for prop in onto.properties():
+        domains = set(prop.domain)
+        ranges = set(prop.range)
+        
+        if cls1 in domains and cls2 in ranges:
+            relationships.append(f"🔗 '{class1}' has property '{prop.name}' that connects to '{class2}'")
+        elif cls2 in domains and cls1 in ranges:
+            relationships.append(f"🔗 '{class2}' has property '{prop.name}' that connects to '{class1}'")
+    
+    # Check common ancestors
+    cls1_ancestors = set(cls1.ancestors())
+    cls2_ancestors = set(cls2.ancestors())
+    common_ancestors = cls1_ancestors.intersection(cls2_ancestors)
+    common_ancestors = [c for c in common_ancestors if hasattr(c, 'name') and c.name not in [class1, class2]]
+    
+    if common_ancestors:
+        ancestor_names = [c.name for c in common_ancestors[:3]]  # Show first 3
+        relationships.append(f"🌳 Common ancestors: {', '.join(ancestor_names)}")
+    
+    if not relationships:
+        return f"ℹ️ No direct relationships found between '{class1}' and '{class2}'"
+    
+    result = [f"🔍 Relationships between '{class1}' and '{class2}':"]
+    result.extend([f"  {rel}" for rel in relationships])
+    
+    return "\n".join(result)
+
+def get_property_details(property_name):
+    """Get detailed information about a specific property"""
+    prop = onto.search_one(iri="*" + property_name)
+    if not prop:
+        return f"❌ Property '{property_name}' not found."
+    
+    parts = [f"🔧 {prop.name}"]
+    
+    # Labels and comments
+    labels = prop.label if hasattr(prop, 'label') else []
+    if labels:
+        parts.append("📝 Label: " + ", ".join(labels))
+    
+    comments = prop.comment if hasattr(prop, 'comment') else []
+    if comments:
+        parts.append("🗒️ Comment: " + ", ".join(comments))
+    
+    # Domain and range
+    domains = [c.name for c in prop.domain if hasattr(c, 'name')]
+    if domains:
+        parts.append("📥 Domain: " + ", ".join(domains))
+    
+    ranges = [c.name for c in prop.range if hasattr(c, 'name')]
+    if ranges:
+        parts.append("📤 Range: " + ", ".join(ranges))
+    
+    return "\n".join(parts)
+
+def get_ontology_stats():
+    """Get basic statistics about the loaded ontology"""
+    classes = list(onto.classes())
+    properties = list(onto.properties())
+    individuals = list(onto.individuals())
+    
+    class_count = len([c for c in classes if hasattr(c, 'name')])
+    property_count = len([p for p in properties if hasattr(p, 'name')])
+    individual_count = len([i for i in individuals if hasattr(i, 'name')])
+    
+    result = [
+        "📊 Ontology Statistics:",
+        f"  📛 Classes: {class_count}",
+        f"  🔧 Properties: {property_count}",
+        f"  👤 Individuals: {individual_count}",
+        f"  📦 Loaded modules: {len(MODULE_FILES)}"
+    ]
+    
+    return "\n".join(result)
